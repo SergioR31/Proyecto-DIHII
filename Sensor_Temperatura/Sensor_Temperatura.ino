@@ -45,9 +45,9 @@ void loop(){
         
         if (Serial.availableForWrite()){
           if(sizeOfData < 10){
-            Serial.println(functionCode+" 0"+sizeOfData+" "+dataHex);
+            Serial.print(functionCode+" 0"+sizeOfData+" "+dataHex);
           }else{
-            Serial.println(functionCode+" "+sizeOfData+" "+dataHex);
+            Serial.print(functionCode+" "+sizeOfData+" "+dataHex);
           }
         }
       }
