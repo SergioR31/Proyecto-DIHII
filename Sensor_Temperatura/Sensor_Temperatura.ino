@@ -50,7 +50,7 @@ void loop(){
       case '1':{
         
         if (Serial.availableForWrite()){
-           Serial.print(fCode+" "+sDataDEC+" "+dataDEC);
+           Serial.println(fCode+" "+sDataDEC+" "+dataDEC);
         }
       }
 
